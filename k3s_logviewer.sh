@@ -35,15 +35,12 @@ fi
 
 # Now the tmux bit 
 
-# Kill all existing tmux sessions
-pkill -f tmux
-
 session="K3s_logviewer"
 
 # Start fresh session
 tmux new-session -d -s $session
 tmux select-pane -T "K3s Logviewer killswitch 💀"
-tmux send-keys -t $session:0.0 "tmux kill-session"
+tmux send-keys -t $session:0.0 "tmux kill-session -t $session"
 
 
 # Display selected namespace/service combinations
