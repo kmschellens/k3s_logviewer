@@ -1,4 +1,4 @@
-# k3s_logviewer
+# K3s Logviewer
 View your running K3s services logs without remembering namespaces, service names or specific commands
 
 Logviewer shows all running services for all namespaces. Resizing the log panes is possible by dragging the borders. 
